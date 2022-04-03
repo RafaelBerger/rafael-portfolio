@@ -79,3 +79,26 @@ header {
     display: none;
   }
 }
+
+@media screen and (max-height: 750px) {
+  header {
+    padding-top: 3rem;
+    height: 100vh;
+  }
+
+  .me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 15rem;
+    height: 24rem;
+    position: absolute;
+    left: calc(50% - 7.5rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+  }
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
+}
