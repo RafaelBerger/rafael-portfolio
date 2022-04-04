@@ -2,7 +2,6 @@ import React from "react";
 import "./about.css";
 import ME from "../../assests/rafael-foto-blur.png";
 import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
@@ -22,26 +21,21 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
-
-            <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>1+ Years Studying</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>8+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            vestibulum lacus a vehicula pretium. Praesent eget tincidunt odio,
-            at consequat dui. Vestibulum quis elementum nibh. Proin lorem dolor,
-            maximus vel molestie eget, mattis vitae tellus.
+            I'm a Front-end Developer delighted by technologie and Web
+            Development, always learning and pursuing knowledge, currently in
+            college and living in São Paulo - SP. <br />
+            Proactivity, good communication and team spirit. Familiarity with
+            agile methodologies like Scrum, i can speak English and Portuguese.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
