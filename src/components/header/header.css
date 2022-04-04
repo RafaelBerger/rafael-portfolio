@@ -29,6 +29,7 @@ header {
   position: absolute;
   left: 0;
   bottom: 3rem;
+  transform: scale(1.2);
 }
 
 .header__socials::after {
@@ -57,7 +58,7 @@ header {
   position: absolute;
   right: -2.3rem;
   bottom: 5rem;
-  transform: rotate(90deg);
+  transform: rotate(90deg) scale(1.1);
   font-weight: 300;
   font-size: 0.9rem;
 }
