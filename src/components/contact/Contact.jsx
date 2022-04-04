@@ -2,13 +2,15 @@ import React from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
 const ddd = "11";
-const whatsapp = "987419874";
-const whatsappParte1 = "98741";
-const whatsappParte2 = "9874";
+const whatsapp = "999361076";
+const whatsappParte1 = "99936";
+const whatsappParte2 = "1076";
 const email = "rafaelberger.dev@gmail.com";
 
 const Contact = () => {
@@ -58,6 +60,18 @@ const Contact = () => {
             <h5>{`+55 (${ddd}) ${whatsappParte1}-${whatsappParte2}`}</h5>
             <a href={`https://wa.me/55${ddd}${whatsapp}`} target="_blank">
               Send a message
+            </a>
+          </article>
+
+          <article className="contact__option">
+            <BsLinkedin className="contact__option-icon" />
+            <h4>LinkedIn</h4>
+            <h5>Rafael Berger</h5>
+            <a
+              href="https://www.linkedin.com/in/rafael-berger/"
+              target="_blank"
+            >
+              Go to LinkedIn
             </a>
           </article>
         </div>
