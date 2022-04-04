@@ -1,8 +1,85 @@
 import React from "react";
 import "./portfolio.css";
+import IMG1 from "../../assests/portfolio1.jpg";
+import IMG2 from "../../assests/portfolio2.jpg";
+import IMG3 from "../../assests/portfolio3.jpg";
+import IMG4 from "../../assests/portfolio4.jpg";
+import IMG5 from "../../assests/portfolio5.png";
+import IMG6 from "../../assests/portfolio6.jpg";
+
+const data = [
+  {
+    id: 1,
+    image: IMG1,
+    title: "Star Wars Dashboard",
+    github: "https://github.com/RafaelBerger/dashboard-starwars",
+    demo: "https://dashboard-sw.vercel.app",
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: "Aluracord",
+    github: "https://github.com/RafaelBerger/aluracord",
+    demo: "https://aluracord-rafael.vercel.app",
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: "Countdown",
+    github: "https://github.com/RafaelBerger/countdown",
+    demo: "https://countdown-date.vercel.app",
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: "Quiz App",
+    github: "https://github.com/RafaelBerger/quiz-game",
+    demo: "https://programming-quiz-game.vercel.app",
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: "Calculator",
+    github: "https://github.com/RafaelBerger/calculadora",
+    demo: "https://calculadora-rafael.vercel.app",
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: "Portfolio Website",
+    github: "https://github.com/RafaelBerger/rafael-portfolio",
+    demo: "https://rafaelberger.vercel.app",
+  },
+];
 
 const Portfolio = () => {
-  return <div>Portfolio</div>;
+  return (
+    <section id="portfolio">
+      <h5>My Recent Work</h5>
+      <h2>Portfolio</h2>
+
+      <div className="container portfolio__container">
+        {data.map(({ id, image, title, github, demo }) => {
+          return (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio__item-cta">
+                <a href={github} className="btn" target="_blank">
+                  Github
+                </a>
+                <a href={demo} className="btn btn-primary" target="_blank">
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  );
 };
 
 export default Portfolio;
