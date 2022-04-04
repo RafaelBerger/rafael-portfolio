@@ -1,11 +1,11 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assests/portfolio1.jpg";
-import IMG2 from "../../assests/portfolio2.jpg";
-import IMG3 from "../../assests/portfolio3.jpg";
-import IMG4 from "../../assests/portfolio4.jpg";
-import IMG5 from "../../assests/portfolio5.png";
-import IMG6 from "../../assests/portfolio6.jpg";
+import IMG1 from "../../assests/dashboard-sw.jpg";
+import IMG2 from "../../assests/aluracord.jpg";
+import IMG3 from "../../assests/countdown.jpg";
+import IMG4 from "../../assests/quiz-app.jpg";
+import IMG5 from "../../assests/calculator.jpg";
+import IMG6 from "../../assests/portfolio-rafa.jpg";
 
 const data = [
   {
