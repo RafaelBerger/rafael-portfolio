@@ -4,8 +4,7 @@ import IMG1 from "../../assests/dashboard-sw.jpg";
 import IMG2 from "../../assests/aluracord.jpg";
 import IMG3 from "../../assests/countdown.jpg";
 import IMG4 from "../../assests/quiz-app.jpg";
-import IMG5 from "../../assests/calculator.jpg";
-import IMG6 from "../../assests/portfolio-rafa.jpg";
+import IMG5 from "../../assests/portfolio-rafa.jpg";
 
 const data = [
   {
@@ -39,13 +38,6 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: "Calculator",
-    github: "https://github.com/RafaelBerger/calculadora",
-    demo: "https://calculadora-rafael.vercel.app",
-  },
-  {
-    id: 6,
-    image: IMG6,
     title: "Portfolio Website",
     github: "https://github.com/RafaelBerger/rafael-portfolio",
     demo: "https://rafaelberger.vercel.app",
