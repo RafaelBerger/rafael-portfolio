@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Portfolio Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site de portfolio criado para apresentação profissional
 
-## Available Scripts
+<div align="left">
+ <img src="https://user-images.githubusercontent.com/84355579/161656514-51279013-ffb6-4a53-b563-5df74308b6e8.jpg" width="450px" />
+</div>
+<div>
+  <img src="https://user-images.githubusercontent.com/84355579/161662602-d79ef340-ed56-4eb1-9cdd-c0fcc23f77aa.jpg" width="450px" />
+</div>
 
-In the project directory, you can run:
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Site responsivo
+- Criado usando React
+- Form criado com EmailJS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias utilizadas
 
-### `npm test`
+![React](https://img.shields.io/badge/React-0A66C2?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![Javascript](https://camo.githubusercontent.com/aeddc848275a1ffce386dc81c04541654ca07b2c43bbb8ad251085c962672aea/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176617363726970742d2532333332333333302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d253233463744463145)]()
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Autores
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [@RafaelBerger](https://www.github.com/RafaelBerger)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##  ⇩	⇩	 English Version  ⇩	⇩	
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Portfolio Website
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Portfolio website created for professional presentation
 
-## Learn More
+<div align="left">
+ <img src="https://user-images.githubusercontent.com/84355579/161656514-51279013-ffb6-4a53-b563-5df74308b6e8.jpg" width="450px" />
+</div>
+<div>
+  <img src="https://user-images.githubusercontent.com/84355579/161662602-d79ef340-ed56-4eb1-9cdd-c0fcc23f77aa.jpg" width="450px" />
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Functionalities
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Responsive website
+- Created using React
+- Form created using EmailJS lib
 
-### Code Splitting
+## Used Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![React](https://img.shields.io/badge/React-0A66C2?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-### Analyzing the Bundle Size
+[![Javascript](https://camo.githubusercontent.com/aeddc848275a1ffce386dc81c04541654ca07b2c43bbb8ad251085c962672aea/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176617363726970742d2532333332333333302e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d253233463744463145)]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Authors
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [@RafaelBerger](https://www.github.com/RafaelBerger)
