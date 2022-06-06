@@ -1,0 +1,18 @@
+#certificate-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 75%;
+}
+
+.centralizar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.certificate-title {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
