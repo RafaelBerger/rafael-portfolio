@@ -2,7 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assests/dashboard-sw.jpg";
 import IMG2 from "../../assests/aluracord.jpg";
-import IMG3 from "../../assests/countdown.jpg";
+import IMG3 from "../../assests/jogo-da-velha.jpg";
 import IMG4 from "../../assests/quiz-app.jpg";
 import IMG5 from "../../assests/morada-bar.jpg";
 
@@ -24,9 +24,9 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: "Countdown",
-    github: "https://github.com/RafaelBerger/countdown",
-    demo: "https://countdown-date.vercel.app",
+    title: "Jogo da Velha",
+    github: "https://github.com/RafaelBerger/jogo-da-velha",
+    demo: "https://jogo-da-velha-rafael.vercel.app",
   },
   {
     id: 4,
