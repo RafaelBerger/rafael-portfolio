@@ -5,6 +5,7 @@ import IMG2 from "../../assests/aluracord.jpg";
 import IMG3 from "../../assests/jogo-da-velha.jpg";
 import IMG4 from "../../assests/quiz-app.jpg";
 import IMG5 from "../../assests/morada-bar.jpg";
+import IMG6 from "../../assests/videos-platform.jpg";
 
 const data = [
   {
@@ -41,6 +42,13 @@ const data = [
     title: "Morada Bar",
     github: "https://github.com/RafaelBerger/morada-bar",
     demo: "https://moradabar.vercel.app",
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: "Videos Platform",
+    github: "https://github.com/RafaelBerger/event-platform",
+    demo: "https://videos-platform.vercel.app",
   },
 ];
 

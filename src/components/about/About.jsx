@@ -31,7 +31,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            I'm a Front-end Developer delighted by technologie and Web
+            I'm a Fullstack Developer delighted by technologie and Web
             Development, always learning and pursuing knowledge, currently in
             college and living in São Paulo - SP. <br />
             Proactivity, good communication and team spirit. Familiarity with
