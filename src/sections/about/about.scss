@@ -1,9 +1,58 @@
 $bg-color-100: #131433;
 .about-container {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   background-color: $bg-color-100;
+}
+
+.about-wrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  .about-information {
+    text-align: justify;
+    width: 50%;
+
+    h1 {
+      font-weight: 800;
+      font-size: 2rem;
+      margin: 0;
+      padding-bottom: 2rem;
+    }
+
+    p {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      font-weight: 300;
+      font-size: 1.125rem;
+    }
+
+    a {
+      padding-bottom: 0.5rem;
+      display: flex;
+    }
+
+    #link {
+      padding-left: 0.5rem;
+    }
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 32rem;
+      height: 32rem;
+      border-radius: 21px;
+      object-fit: cover;
+    }
+  }
 }
