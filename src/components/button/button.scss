@@ -1,0 +1,23 @@
+.button {
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  cursor: pointer;
+  border: solid;
+  border-color: #4ac4c4;
+  border-radius: 12px;
+  border-width: 2px;
+
+  font-size: 30px;
+  width: auto;
+  height: 5rem;
+  padding: 0 4rem 0 4rem;
+  background-color: rgba(#b91c1c, 0);
+
+  &:hover {
+    transition: 0.25s;
+    background-color: #4ac4c4;
+  }
+}

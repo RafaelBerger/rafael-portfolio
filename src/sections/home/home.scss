@@ -1,0 +1,57 @@
+$bg-color-home: #0a0919;
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $bg-color-home;
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+
+    .information-container {
+      width: 50%;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 8rem;
+
+      .introduction {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .nome {
+          font-size: 4rem;
+          font-weight: 800;
+        }
+        p {
+          font-size: 1.8rem;
+          font-weight: 300;
+        }
+      }
+      .buttons {
+        display: flex;
+        justify-content: start;
+        gap: 2rem;
+      }
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 35rem;
+        height: 35rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
