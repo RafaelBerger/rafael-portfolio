@@ -1,4 +1,5 @@
 import Button from "../../components/button/Button";
+import "./home.scss";
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
-import Home from "./sections/home/Home";
 // import Navbar from "./components/navbar/Navbar";
-import "./sections/home/home.scss";
+import Home from "./sections/home/Home";
 import About from "./sections/about/About";
+import Technologies from "./sections/technologies/Technologies";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       {/* <Navbar /> */}
       <Home />
       <About />
+      <Technologies />
     </>
   );
 }

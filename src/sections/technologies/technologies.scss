@@ -1,0 +1,40 @@
+$bg-color-200: #100f2e;
+
+.technologies-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 40vh;
+  background-color: $bg-color-200;
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 4rem;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .technologies-icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    gap: 2rem;
+
+    p {
+      padding-top: 1.5rem;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: solid 4px;
+      border-radius: 1rem;
+      padding: 16px;
+      border-color: #242549;
+    }
+  }
+}
