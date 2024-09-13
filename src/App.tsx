@@ -2,6 +2,7 @@
 import Home from "./sections/home/Home";
 import About from "./sections/about/About";
 import Technologies from "./sections/technologies/Technologies";
+import Portfolio from "./sections/portfolio/Portfolio";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <About />
       <Technologies />
+      <Portfolio />
     </>
   );
 }

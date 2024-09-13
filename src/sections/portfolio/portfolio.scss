@@ -1,0 +1,64 @@
+$bg-color-100: #131433;
+
+.portfolio-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: $bg-color-100;
+
+  .all-content-container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      text-align: center;
+      margin: 0;
+      padding-top: 4rem;
+      font-weight: 800;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0 0 2rem 0;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+
+  main {
+    padding-top: 6rem;
+    width: 100%;
+    display: flex;
+    gap: 20rem;
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 25rem;
+        height: 20rem;
+        border-radius: 15px;
+        object-fit: cover;
+      }
+    }
+    .information {
+      padding-bottom: 3rem;
+    }
+    .buttons {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      gap: 2rem;
+    }
+  }
+}

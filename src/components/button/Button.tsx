@@ -2,7 +2,7 @@ import "./button.scss";
 
 interface ButtonProps {
   children: string;
-  link: string;
+  link?: string;
 }
 
 export default function Button({ children, link }: ButtonProps) {
