@@ -25,6 +25,16 @@ export default function About() {
             <br />
             <p>
               <a
+                href="https://wa.me/5511999361076"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsappSquare size={28} color="#4ac4c4" />
+                <span id="link">(11)99936-1076</span>
+              </a>
+            </p>
+            <p>
+              <a
                 href="https://linkedin.com/in/rafael-berger"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -41,16 +51,6 @@ export default function About() {
               >
                 <MdEmail size={28} color="#4ac4c4" />
                 <span id="link">rafaelberger.dev@gmail.com</span>
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://wa.me/5511999361076"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaWhatsappSquare size={28} color="#4ac4c4" />
-                <span id="link">(11)99936-1076</span>
               </a>
             </p>
           </div>

@@ -5,10 +5,18 @@ export default function Navbar() {
     <>
       <div className="navbar-container">
         <ul>
-          <li>Inicio</li>
-          <li>Sobre mim</li>
-          <li>Conhecimentos</li>
-          <li>Portfolio</li>
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#about">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#tecnologies">Tecnologias</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
           <li>Certificados</li>
         </ul>
       </div>

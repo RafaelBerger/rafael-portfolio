@@ -1,6 +1,7 @@
-import Button from "../../components/button/Button";
 import "./portfolio.scss";
-import projectImage from "../../assets/a.png";
+import moradaImage from "../../assets/morada-img.png";
+import dashboardImage from "../../assets/dashboard-img.png";
+import PortfolioContent from "../../components/portfolio-content/PortfolioContent";
 
 export default function Portfolio() {
   return (
@@ -9,91 +10,23 @@ export default function Portfolio() {
         <div className="all-content-container">
           <h1>Portfolio</h1>
 
-          <main>
-            <div className="image-container">
-              <img src={projectImage} alt="Imagem de projeto" />
-            </div>
-            <div>
-              <div className="information">
-                <h2>Nome projeto</h2>
-                <p>
-                  {" "}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolorem voluptatem quasi eaque, quia at numquam repellat, esse
-                  quo placeat deleniti nam praesentium blanditiis eos natus
-                  laudantium. Nihil, illum. Perferendis, eaque.
-                </p>
-              </div>
-              <div className="buttons">
-                <Button>Abrir projeto</Button>
-                <Button>Github</Button>
-              </div>
-            </div>
-          </main>
-
-          <main>
-            <div className="image-container">
-              <img src={projectImage} alt="Imagem de projeto" />
-            </div>
-            <div>
-              <div className="information">
-                <h2>Nome projeto</h2>
-                <p>
-                  {" "}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolorem voluptatem quasi eaque, quia at numquam repellat, esse
-                  quo placeat deleniti nam praesentium blanditiis eos natus
-                  laudantium. Nihil, illum. Perferendis, eaque.
-                </p>
-              </div>
-              <div className="buttons">
-                <Button>Abrir projeto</Button>
-                <Button>Github</Button>
-              </div>
-            </div>
-          </main>
-          <main>
-            <div className="image-container">
-              <img src={projectImage} alt="Imagem de projeto" />
-            </div>
-            <div>
-              <div className="information">
-                <h2>Nome projeto</h2>
-                <p>
-                  {" "}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolorem voluptatem quasi eaque, quia at numquam repellat, esse
-                  quo placeat deleniti nam praesentium blanditiis eos natus
-                  laudantium. Nihil, illum. Perferendis, eaque.
-                </p>
-              </div>
-              <div className="buttons">
-                <Button>Abrir projeto</Button>
-                <Button>Github</Button>
-              </div>
-            </div>
-          </main>
-          <main>
-            <div className="image-container">
-              <img src={projectImage} alt="Imagem de projeto" />
-            </div>
-            <div>
-              <div className="information">
-                <h2>Nome projeto</h2>
-                <p>
-                  {" "}
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dolorem voluptatem quasi eaque, quia at numquam repellat, esse
-                  quo placeat deleniti nam praesentium blanditiis eos natus
-                  laudantium. Nihil, illum. Perferendis, eaque.
-                </p>
-              </div>
-              <div className="buttons">
-                <Button>Abrir projeto</Button>
-                <Button>Github</Button>
-              </div>
-            </div>
-          </main>
+          <PortfolioContent
+            image={moradaImage}
+            projectName="MoradaBar"
+            projectDescription="Criei um site de apresentação para o MoradaBar, um charmoso barzinho em Santo André.
+              Informações sobre o ambiente e detalhes de contato, tudo com uma navegação fácil e um design responsivo que garante uma experiência de usuário otimizada em dispositivos móveis e desktops.
+              Utilizei React para esse projeto."
+            projectLink="https://moradabar.com"
+            projectGithubLink="https://github.com/RafaelBerger/morada-bar"
+          />
+          <PortfolioContent
+            image={dashboardImage}
+            projectName="Dashboard de Star Wars"
+            projectDescription="Dashboard de star wars, consumindo uma API pública de star wars e integrando ao projeto usando
+            conceitos de AJAX e Rest API."
+            projectLink="https://dashboard-sw.vercel.app/"
+            projectGithubLink="https://github.com/RafaelBerger/dashboard-starwars"
+          />
         </div>
       </section>
     </>

@@ -1,0 +1,27 @@
+main {
+  padding-top: 6rem;
+  width: 100%;
+  display: flex;
+  gap: 20rem;
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 25rem;
+      height: 20rem;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+  }
+  .information {
+    padding-bottom: 3rem;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+  }
+}

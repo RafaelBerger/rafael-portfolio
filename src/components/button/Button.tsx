@@ -2,13 +2,18 @@ import "./button.scss";
 
 interface ButtonProps {
   children: string;
-  link?: string;
+  href?: string;
+  isDownload?: boolean;
 }
 
-export default function Button({ children, link }: ButtonProps) {
+export default function Button({
+  children,
+  href,
+  isDownload = false,
+}: ButtonProps) {
   return (
     <button className="button">
-      <a href={link} target="_blank">
+      <a href={href} target="_blank" download={isDownload}>
         {children}
       </a>
     </button>
