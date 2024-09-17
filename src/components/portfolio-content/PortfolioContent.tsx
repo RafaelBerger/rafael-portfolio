@@ -19,12 +19,13 @@ export default function PortfolioContent({
   return (
     <>
       <main>
+        <h2 id="project-name-mobile">{projectName}</h2>
         <div className="image-container">
           <img src={image} alt="Imagem de projeto" />
         </div>
-        <div>
+        <div className="information-container">
           <div className="information">
-            <h2>{projectName}</h2>
+            <h2 id="project-name">{projectName}</h2>
             <p>{projectDescription}</p>
           </div>
           <div className="buttons">

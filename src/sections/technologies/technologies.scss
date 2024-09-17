@@ -36,3 +36,19 @@ $bg-color-200: #100f2e;
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  .technologies-container {
+    width: 100%;
+    height: auto;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .technologies-icons {
+      flex-wrap: wrap;
+      padding-bottom: 4rem;
+    }
+  }
+}

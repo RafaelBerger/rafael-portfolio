@@ -4,6 +4,14 @@ main {
   display: flex;
   gap: 20rem;
 
+  #project-name-mobile {
+    display: none;
+  }
+
+  #project-name {
+    display: inline;
+  }
+
   .image-container {
     display: flex;
     justify-content: center;
@@ -23,5 +31,56 @@ main {
     display: flex;
     justify-content: start;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    width: 100%;
+    gap: 2rem;
+
+    #project-name-mobile {
+      display: inline;
+    }
+
+    #project-name {
+      display: none;
+    }
+
+    .information-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      img {
+        width: 80%;
+        height: 12rem;
+        border-radius: 15px;
+        object-fit: cover;
+      }
+    }
+    .information {
+      width: 90%;
+      padding-bottom: 3rem;
+    }
+    .buttons {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 2rem;
+    }
   }
 }

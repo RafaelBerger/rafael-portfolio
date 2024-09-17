@@ -8,7 +8,7 @@ $bg-color-100: #131433;
   background-color: $bg-color-100;
 
   .all-content-container {
-    width: 70%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -17,8 +17,8 @@ $bg-color-100: #131433;
       margin: 0;
       text-align: center;
       padding-top: 4rem;
-      font-weight: 800;
-      font-size: 2rem;
+      font-weight: 700;
+      font-size: 1.5rem;
     }
 
     h2 {
@@ -31,6 +31,38 @@ $bg-color-100: #131433;
       font-size: 20px;
       font-weight: 300;
       text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portfolio-container {
+    .all-content-container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        margin: 0;
+        text-align: center;
+        padding-top: 4rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        margin: 0;
+        padding: 0 0 2rem 0;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: justify;
+      }
     }
   }
 }
