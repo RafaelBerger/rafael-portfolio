@@ -33,7 +33,7 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiReact color="#61dbfb" size={90} />
+            <SiReact color="#61dbfb" size={90} className="responsive-icon" />
             <p>Reactjs</p>
           </motion.div>
           <motion.div
@@ -47,7 +47,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiTypescript color="#007acc" size={90} />
+            <SiTypescript
+              color="#007acc"
+              size={90}
+              className="responsive-icon"
+            />
             <p>Typescript</p>
           </motion.div>
           <motion.div
@@ -61,7 +65,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiTailwindcss color="#38BDF8" size={90} />
+            <SiTailwindcss
+              color="#38BDF8"
+              size={90}
+              className="responsive-icon"
+            />
             <p>Tailwindcss</p>
           </motion.div>
           <motion.div
@@ -75,7 +83,7 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiSass color="#c69" size={90} />
+            <SiSass color="#c69" size={90} className="responsive-icon" />
             <p>Sass</p>
           </motion.div>
           <motion.div
@@ -89,7 +97,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiNodedotjs color="#3C873A" size={90} />
+            <SiNodedotjs
+              color="#3C873A"
+              size={90}
+              className="responsive-icon"
+            />
             <p>Nodejs</p>
           </motion.div>
           <motion.div
@@ -103,7 +115,7 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiExpress color="#3C873A" size={90} />
+            <SiExpress color="#3C873A" size={90} className="responsive-icon" />
             <p>Express</p>
           </motion.div>
           <motion.div
@@ -117,7 +129,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiPostgresql color="#008bb9" size={90} />
+            <SiPostgresql
+              color="#008bb9"
+              size={90}
+              className="responsive-icon"
+            />
             <p>Postgresql</p>
           </motion.div>
           <motion.div
@@ -131,7 +147,7 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiDocker color="#1D63ED" size={90} />
+            <SiDocker color="#1D63ED" size={90} className="responsive-icon" />
             <p>Docker</p>
           </motion.div>
           <motion.div
@@ -145,7 +161,7 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiGit color="#F1502F" size={90} />
+            <SiGit color="#F1502F" size={90} className="responsive-icon" />
             <p>Git</p>
           </motion.div>
           <motion.div
@@ -159,7 +175,7 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiJest color="#C63D14" size={90} />
+            <SiJest color="#C63D14" size={90} className="responsive-icon" />
             <p>Jest</p>
           </motion.div>
           <motion.div
@@ -173,7 +189,7 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiFigma color="#ffffff" size={90} />
+            <SiFigma color="#ffffff" size={90} className="responsive-icon" />
             <p>Figma</p>
           </motion.div>
         </div>

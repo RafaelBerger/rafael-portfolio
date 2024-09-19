@@ -3,21 +3,56 @@ a {
   color: #ffffff;
 }
 
-.button {
-  cursor: pointer;
-  border: solid;
-  border-color: #4ac4c4;
-  border-radius: 12px;
-  border-width: 2px;
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  font-size: 24px;
-  width: auto;
-  height: 4rem;
-  padding: 0 3rem 0 3rem;
-  background-color: rgba(#b91c1c, 0);
+  .button {
+    cursor: pointer;
+    border: solid;
+    border-color: #4ac4c4;
+    border-radius: 12px;
+    border-width: 2px;
 
-  &:hover {
-    transition: 0.25s;
-    background-color: #4ac4c4;
+    font-size: 1.5rem;
+    width: auto;
+    height: 4rem;
+    padding: 0 3rem 0 3rem;
+    background-color: rgba(#b91c1c, 0);
+
+    &:hover {
+      transition: 0.25s;
+      background-color: #4ac4c4;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .buttons {
+    .button {
+      border-radius: 12px;
+      border-width: 2px;
+
+      font-size: 1.2rem;
+      width: auto;
+      height: 3.8rem;
+      padding: 0 2.6rem 0 2.6rem;
+      background-color: rgba(#b91c1c, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button {
+      padding: 0 1rem 0 1rem;
+      font-size: 1rem;
+      border-width: 1px;
+      height: 3.2rem;
+      width: 70%;
+    }
   }
 }
