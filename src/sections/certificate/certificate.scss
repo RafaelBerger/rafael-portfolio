@@ -1,0 +1,142 @@
+.certificate-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 4rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  main {
+    max-width: 1440px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 5rem;
+
+    .certificate-content {
+      max-width: min-content;
+      text-align: justify;
+
+      .certificate-button-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1.2rem;
+        padding-bottom: 3rem;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 22rem;
+          height: 15rem;
+          border-radius: 15px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .certificate-container {
+    main {
+      width: 70%;
+      gap: 2rem;
+
+      .certificate-content {
+        h3 {
+          font-size: 1.2rem;
+          text-align: center;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 1rem;
+          padding-bottom: 3rem;
+        }
+
+        .button {
+          font-size: 1.1rem;
+
+          padding: 0 1.5rem 0 1.5rem;
+          height: 3.2rem;
+        }
+
+        .image-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 17rem;
+            height: 12rem;
+            border-radius: 15px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .certificate-container {
+    main {
+      padding-top: 4rem;
+      grid-template-columns: 1fr;
+
+      .certificate-content {
+        padding-top: 3rem;
+
+        h3 {
+          font-size: 1.2rem;
+          text-align: center;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 1rem;
+          padding-bottom: 3rem;
+        }
+
+        .button {
+          font-size: 1.1rem;
+
+          padding: 0 1.5rem 0 1.5rem;
+          height: 3.2rem;
+        }
+
+        .image-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 17rem;
+            height: 12rem;
+            border-radius: 15px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

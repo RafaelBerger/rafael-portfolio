@@ -3,6 +3,7 @@ import Home from "./sections/home/Home";
 import About from "./sections/about/About";
 import Technologies from "./sections/technologies/Technologies";
 import Portfolio from "./sections/portfolio/Portfolio";
+import Certificate from "./sections/certificate/Certificate";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       </div>
       <div id="portfolio">
         <Portfolio />
+      </div>
+      <div id="certificate">
+        <Certificate />
       </div>
     </>
   );

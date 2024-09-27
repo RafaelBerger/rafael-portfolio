@@ -20,6 +20,25 @@ body {
   scroll-padding-top: 2rem;
 }
 
+button {
+  cursor: pointer;
+  border: solid;
+  border-color: #4ac4c4;
+  border-radius: 12px;
+  border-width: 2px;
+
+  font-size: 1.5rem;
+  width: auto;
+  height: 4rem;
+  padding: 0 3rem 0 3rem;
+  background-color: rgba(#b91c1c, 0);
+
+  &:hover {
+    transition: 0.25s;
+    background-color: #4ac4c4;
+  }
+}
+
 p {
   margin: 0;
   padding: 0;
