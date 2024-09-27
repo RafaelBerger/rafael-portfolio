@@ -1,6 +1,6 @@
 main {
   padding-top: 6rem;
-  width: 100%;
+  width: 70%;
   display: flex;
   gap: 20rem;
 
@@ -9,7 +9,7 @@ main {
   }
 
   #project-name {
-    display: inline;
+    display: block;
   }
 
   .image-container {
@@ -25,12 +25,57 @@ main {
   }
   .information {
     padding-bottom: 3rem;
+
+    h2 {
+      margin: 0;
+      padding: 0 0 2rem 0;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-align: justify;
+    }
   }
   .buttons {
     width: 100%;
     display: flex;
     justify-content: start;
     gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  main {
+    max-width: 1345px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  main {
+    gap: 12rem;
+
+    #project-name {
+      font-size: 1.3rem;
+    }
+
+    .information {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .image-container {
+      img {
+        width: 20rem;
+        height: 15rem;
+      }
+    }
+  }
+
+  .information-container {
+    min-width: 400px;
   }
 }
 
@@ -45,7 +90,7 @@ main {
     gap: 2rem;
 
     #project-name-mobile {
-      display: inline;
+      display: block;
     }
 
     #project-name {

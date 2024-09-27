@@ -56,6 +56,45 @@ $bg-color-home: #0a0919;
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .home-container {
+    main {
+      .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 24rem;
+          height: 24rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .information-container {
+        min-width: 383px;
+        .buttons {
+          width: 100%;
+          display: flex;
+          gap: 2rem;
+        }
+        .introduction {
+          width: 100%;
+          .nome {
+            font-size: 2rem;
+            font-weight: 700;
+          }
+
+          p {
+            font-size: 1.5rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
   .home-container {
     display: flex;
@@ -113,5 +152,11 @@ $bg-color-home: #0a0919;
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  main {
+    max-width: 1345px;
   }
 }

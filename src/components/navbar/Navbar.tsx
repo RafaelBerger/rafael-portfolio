@@ -17,7 +17,9 @@ export default function Navbar() {
           <li>
             <a href="#portfolio">Portfolio</a>
           </li>
-          <li>Certificados</li>
+          <li>
+            <a href="#certificate">Certificados</a>
+          </li>
         </ul>
       </div>
     </>

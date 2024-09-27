@@ -32,6 +32,22 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .navbar-container {
+    height: 3.5rem;
+
+    ul {
+      font-size: 1rem;
+      width: 40%;
+      height: 100%;
+      padding-left: 14rem;
+      list-style: none;
+
+      gap: 2rem;
+    }
+  }
+}
+
 @media screen and (max-width: 450px) {
   .navbar-container {
     display: none;
