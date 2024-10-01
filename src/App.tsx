@@ -4,6 +4,7 @@ import About from "./sections/about/About";
 import Technologies from "./sections/technologies/Technologies";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Certificate from "./sections/certificate/Certificate";
+import Footer from "./sections/footer/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <div id="certificate">
         <Certificate />
       </div>
+      <Footer />
     </>
   );
 }

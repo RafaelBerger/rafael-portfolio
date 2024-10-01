@@ -18,8 +18,8 @@ export default function About() {
               eficientes. <br /> <br /> Tenho conhecimento em diversas
               tecnologias e frameworks modernos, possuo um forte compromisso com
               boas práticas de programação, como clean code, versionamento de
-              código e testes automatizados. Estou sempre em busca de novas
-              oportunidades para aplicar e expandir meu conhecimento.
+              código e etc. Estou sempre em busca de novas oportunidades para
+              aplicar e expandir meu conhecimento.
             </p>
             <br />
             <br />
