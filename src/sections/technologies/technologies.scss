@@ -75,7 +75,7 @@ $bg-color-200: #100f2e;
     align-items: center;
     flex-direction: column;
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 700;
     }
 
@@ -84,16 +84,17 @@ $bg-color-200: #100f2e;
       flex-wrap: wrap;
       padding: 4rem 0 4rem 0;
       .icon-container {
-        width: 80px;
+        width: 70px;
+        height: 100px;
         padding: 14px;
         p {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           padding-top: 5px;
         }
       }
 
       .responsive-icon {
-        width: 60px;
+        width: 50px;
       }
     }
   }
