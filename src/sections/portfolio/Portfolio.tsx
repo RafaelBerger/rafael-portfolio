@@ -1,6 +1,7 @@
 import "./portfolio.scss";
 import moradaImage from "../../assets/morada-img.png";
 import dashboardImage from "../../assets/dashboard-img.png";
+import epifaniasImage from "../../assets/bandaepifanias.png";
 import PortfolioContent from "../../components/portfolio-content/PortfolioContent";
 
 export default function Portfolio() {
@@ -19,6 +20,13 @@ export default function Portfolio() {
             projectLink="https://moradabar.com"
             projectGithubLink="https://github.com/RafaelBerger/morada-bar"
           />
+            <PortfolioContent
+              image={epifaniasImage}
+              projectName="Banda Epifanias"
+              projectDescription="Site no estilo Linktree para direcionar os usuários para as redes sociais da banda."
+              projectLink="https://epifanias.vercel.app"
+              projectGithubLink="https://github.com/RafaelBerger/epifanias"
+            />
           <PortfolioContent
             image={dashboardImage}
             projectName="Dashboard de Star Wars"
