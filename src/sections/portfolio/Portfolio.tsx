@@ -1,6 +1,6 @@
 import "./portfolio.scss";
 import moradaImage from "../../assets/morada-img.png";
-import dashboardImage from "../../assets/dashboard-img.png";
+import financialManagement from "../../assets/financialmanagement.png";
 import epifaniasImage from "../../assets/bandaepifanias.png";
 import PortfolioContent from "../../components/portfolio-content/PortfolioContent";
 
@@ -11,6 +11,15 @@ export default function Portfolio() {
         <div className="all-content-container">
           <h1>Portfolio</h1>
 
+          <PortfolioContent
+            image={financialManagement}
+            projectName="Financial Management"
+            projectDescription="Aplicativo Fullstack para controle de gastos pessoais, com cadastro e listagem de ganhos e gastos, integração via API REST.
+            Tecnologias: React, TailwindCSS, Node.js, Express, PostgreSQL
+            Deploy: Vercel (frontend) e Render (backend)"
+            projectLink="https://moneycontroler.vercel.app/"
+            projectGithubLink="https://github.com/RafaelBerger/financial-management-frontend"
+          />
           <PortfolioContent
             image={moradaImage}
             projectName="MoradaBar"
@@ -27,14 +36,6 @@ export default function Portfolio() {
               projectLink="https://epifanias.vercel.app"
               projectGithubLink="https://github.com/RafaelBerger/epifanias"
             />
-          <PortfolioContent
-            image={dashboardImage}
-            projectName="Dashboard de Star Wars"
-            projectDescription="Dashboard de star wars, consumindo uma API pública de star wars e integrando ao projeto usando
-            conceitos de AJAX e Rest API."
-            projectLink="https://dashboard-sw.vercel.app/"
-            projectGithubLink="https://github.com/RafaelBerger/dashboard-starwars"
-          />
         </div>
       </section>
     </>
