@@ -26,7 +26,7 @@ export default function Portfolio() {
             projectDescription="Criei um site de apresentação para o MoradaBar, um charmoso barzinho em Santo André.
               Informações sobre o ambiente e detalhes de contato, tudo com uma navegação fácil e um design responsivo que garante uma experiência de usuário otimizada em dispositivos móveis e desktops.
               Utilizei React para esse projeto."
-            projectLink="https://moradabar.com"
+            projectLink="https://moradabar.vercel.app"
             projectGithubLink="https://github.com/RafaelBerger/morada-bar"
           />
             <PortfolioContent
