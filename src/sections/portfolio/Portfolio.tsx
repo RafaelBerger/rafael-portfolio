@@ -1,7 +1,7 @@
 import "./portfolio.scss";
-import moradaImage from "../../assets/morada-img.png";
 import financialManagement from "../../assets/financialmanagement.png";
-import epifaniasImage from "../../assets/bandaepifanias.png";
+import otimalogImage from "../../assets/imagemotimalog.png";
+import amaclassicosImage from "../../assets/imagemamaclassicos.png";
 import PortfolioContent from "../../components/portfolio-content/PortfolioContent";
 
 export default function Portfolio() {
@@ -11,6 +11,23 @@ export default function Portfolio() {
         <div className="all-content-container">
           <h1>Portfolio</h1>
 
+          <p>Útimos projetos concluídos</p>
+
+          <PortfolioContent
+            image={amaclassicosImage}
+            projectName="AmaClassicos"
+            projectDescription="Desenvolvi um site de catálogo de carros clássicos para o cliente, com informações e imagens dos veículos consumidos por API pelo CMS Hygraph.
+            Tecnologias: React (com ReactRouter), TypeScript, Hygraph (CMS), GraphQL"
+            projectLink="https://amaclassicos.vercel.app"
+            projectGithubLink="https://github.com/RafaelBerger/amaclassicos"
+          />
+          <PortfolioContent
+            image={otimalogImage}
+            projectName="OtimaLog"
+            projectDescription="Projeto de site estilo landing page para uma empresa de operador logistico de redespacho, informando história, serviços e contato. Tecnologias: React, TypeScript, CSS"
+            projectLink="https://otimalog.com.br"
+            projectGithubLink="https://github.com/RafaelBerger/otimalog"
+          />
           <PortfolioContent
             image={financialManagement}
             projectName="Financial Management"
@@ -20,22 +37,6 @@ export default function Portfolio() {
             projectLink="https://moneycontroler.vercel.app/"
             projectGithubLink="https://github.com/RafaelBerger/financial-management-frontend"
           />
-          <PortfolioContent
-            image={moradaImage}
-            projectName="MoradaBar"
-            projectDescription="Criei um site de apresentação para o MoradaBar, um charmoso barzinho em Santo André.
-              Informações sobre o ambiente e detalhes de contato, tudo com uma navegação fácil e um design responsivo que garante uma experiência de usuário otimizada em dispositivos móveis e desktops.
-              Utilizei React para esse projeto."
-            projectLink="https://moradabar.vercel.app"
-            projectGithubLink="https://github.com/RafaelBerger/morada-bar"
-          />
-            <PortfolioContent
-              image={epifaniasImage}
-              projectName="Banda Epifanias"
-              projectDescription="Site no estilo Linktree para direcionar os usuários para as redes sociais da banda."
-              projectLink="https://epifanias.vercel.app"
-              projectGithubLink="https://github.com/RafaelBerger/epifanias"
-            />
         </div>
       </section>
     </>
