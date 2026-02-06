@@ -35,12 +35,12 @@ export default function About() {
             </p>
             <p>
               <a
-                href="https://linkedin.com/in/rafael-berger"
+                href="https://linkedin.com/in/rafaelberger"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin size={28} color="#4ac4c4" />
-                <span id="link">linkedin.com/in/rafael-berger</span>
+                <span id="link">linkedin.com/in/rafaelberger</span>
               </a>
             </p>
             <p>
