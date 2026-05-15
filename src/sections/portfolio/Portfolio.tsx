@@ -3,6 +3,7 @@ import financialManagement from "../../assets/financialmanagement.png";
 import otimalogImage from "../../assets/imagemotimalog.png";
 import amaclassicosImage from "../../assets/imagemamaclassicos.png";
 import PortfolioContent from "../../components/portfolio-content/PortfolioContent";
+import epifaniasImage from "../../assets/bandaepifanias.png";
 
 export default function Portfolio() {
   return (
@@ -13,6 +14,13 @@ export default function Portfolio() {
 
           <p>Útimos projetos concluídos</p>
 
+          <PortfolioContent
+            image={epifaniasImage}
+            projectName="Banda Epifanias"
+            projectDescription="Projeto de site estilo Linktree para a banda Epifanias, com links para redes sociais. Tecnologias: React, TypeScript, CSS"
+            projectLink="https://epifanias.vercel.app/"
+            projectGithubLink="https://github.com/RafaelBerger/epifanias"
+          />
           <PortfolioContent
             image={amaclassicosImage}
             projectName="AmaClassicos"
@@ -33,7 +41,8 @@ export default function Portfolio() {
             projectName="Financial Management"
             projectDescription="Aplicativo Fullstack para controle de gastos pessoais, com cadastro e listagem de ganhos e gastos, integração via API REST.
             Tecnologias: React, TailwindCSS, Node.js, Express, PostgreSQL
-            Deploy: Vercel (frontend) e Render (backend)"
+            Deploy: Vercel (frontend) e Render (backend)
+            Aviso: O backend pode demorar um pouco para iniciar, pois está hospedado em um serviço gratuito que coloca o servidor em modo de hibernação quando não está em uso."
             projectLink="https://moneycontroler.vercel.app/"
             projectGithubLink="https://github.com/RafaelBerger/financial-management-frontend"
           />
