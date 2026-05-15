@@ -1,6 +1,7 @@
 import "./about.scss";
 import { FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import RafaelFotoDiferente from "../../assets/foto-rafael-diferente.png";
 
 export default function About() {
   return (
@@ -55,10 +56,7 @@ export default function About() {
             </p>
           </div>
           <div className="img-container">
-            <img
-              src="https://github.com/rafaelberger.png"
-              alt="Foto do rafael"
-            />
+            <img src={RafaelFotoDiferente} alt="Foto do rafael" />
           </div>
         </div>
       </section>
