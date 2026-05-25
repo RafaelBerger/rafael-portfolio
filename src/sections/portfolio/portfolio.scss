@@ -3,7 +3,7 @@ $bg-color-100: #131433;
 .portfolio-container {
   width: 100vw;
   height: auto;
-  padding-bottom: 6rem;
+  padding: 4rem 1rem 6rem 1rem;
   display: flex;
   justify-content: center;
   background-color: $bg-color-100;
@@ -19,15 +19,44 @@ $bg-color-100: #131433;
     h1 {
       margin: 0;
       text-align: center;
-      padding-top: 4rem;
+      padding-top: 1rem;
       font-weight: 700;
       font-size: 1.5rem;
+      line-height: 1.3;
     }
   }
 }
 
-@media screen and (max-width: 450px) {
+/* =============== MEDIA QUERIES (LARGE TABLETS) =============== */
+@media screen and (max-width: 1440px) {
   .portfolio-container {
+    .all-content-container {
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+/* =============== MEDIA QUERIES (TABLETS) =============== */
+@media screen and (max-width: 1024px) {
+  .portfolio-container {
+    padding: 5rem 1rem 4rem 1rem;
+
+    .all-content-container {
+      h1 {
+        font-size: 1.3rem;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+}
+
+/* =============== MEDIA QUERIES (SMALL TABLETS) =============== */
+@media screen and (max-width: 768px) {
+  .portfolio-container {
+    padding: 5rem 1rem 3rem 1rem;
+
     .all-content-container {
       width: 100%;
       height: auto;
@@ -37,9 +66,30 @@ $bg-color-100: #131433;
       h1 {
         margin: 0;
         text-align: center;
-        padding-top: 4rem;
         font-weight: 700;
         font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+/* =============== MEDIA QUERIES (MOBILE) =============== */
+@media screen and (max-width: 450px) {
+  .portfolio-container {
+    padding: 5rem 1rem 3rem 1rem;
+
+    .all-content-container {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        margin: 0;
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 700;
+        font-size: 1.1rem;
       }
     }
   }
