@@ -2,25 +2,36 @@ $bg-color-200: #100f2e;
 
 .technologies-container {
   width: 100vw;
-  height: 42vh;
+  height: auto;
   background-color: $bg-color-200;
+  padding: 4rem 1rem 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     margin: 0;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 0.5rem;
     font-weight: 800;
     font-size: 2rem;
+    line-height: 1.3;
   }
 
   .technologies-icons {
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
     gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
 
     p {
-      padding-top: 1.5rem;
+      padding-top: 1rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-align: center;
     }
 
     .icon-container {
@@ -29,33 +40,70 @@ $bg-color-200: #100f2e;
       justify-content: center;
       align-items: center;
 
-      border: solid 4px;
+      border: solid 3px;
       border-radius: 1rem;
       padding: 16px;
       border-color: #242549;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        border-color: #4ac4c4;
+        box-shadow: 0 4px 12px rgba(74, 196, 196, 0.2);
+        transform: translateY(-3px);
+      }
     }
   }
 }
 
+/* =============== MEDIA QUERIES (LARGE TABLETS) =============== */
 @media screen and (max-width: 1440px) {
   .technologies-container {
-    width: 100vw;
-    height: auto;
     h1 {
       font-size: 1.5rem;
       font-weight: 700;
     }
 
     .technologies-icons {
-      flex-wrap: wrap;
-      padding: 5rem 6rem 4rem 6rem;
+      padding: 3rem 2rem;
+      gap: 1.5rem;
+
+      .icon-container {
+        width: 85px;
+        padding: 14px;
+        p {
+          font-size: 0.85rem;
+          padding-top: 8px;
+        }
+      }
+
+      .responsive-icon {
+        width: 65px;
+      }
+    }
+  }
+}
+
+/* =============== MEDIA QUERIES (TABLETS) =============== */
+@media screen and (max-width: 1024px) {
+  .technologies-container {
+    padding: 4rem 1rem;
+
+    h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .technologies-icons {
+      padding: 2rem 1rem 3rem 1rem;
+      gap: 1.5rem;
+      justify-content: center;
 
       .icon-container {
         width: 80px;
-        padding: 14px;
+        padding: 12px;
         p {
-          font-size: 0.9rem;
-          padding-top: 5px;
+          font-size: 0.8rem;
+          padding-top: 6px;
         }
       }
 
@@ -66,30 +114,57 @@ $bg-color-200: #100f2e;
   }
 }
 
+/* =============== MEDIA QUERIES (SMALL TABLETS) =============== */
+@media screen and (max-width: 768px) {
+  .technologies-container {
+    padding: 3rem 1rem;
+
+    h1 {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    .technologies-icons {
+      width: 95%;
+      padding: 2rem 0.5rem;
+      gap: 1.2rem;
+      .icon-container {
+        width: 75px;
+        padding: 12px;
+        p {
+          font-size: 0.75rem;
+          padding-top: 6px;
+        }
+      }
+
+      .responsive-icon {
+        width: 55px;
+      }
+    }
+  }
+}
+
+/* =============== MEDIA QUERIES (MOBILE) =============== */
 @media screen and (max-width: 450px) {
   .technologies-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 3rem 1rem;
+
     h1 {
       font-size: 1.2rem;
       font-weight: 700;
     }
 
     .technologies-icons {
-      width: 90%;
-      flex-wrap: wrap;
-      padding: 4rem 0 4rem 0;
+      width: 100%;
+      padding: 2rem 0.5rem;
+      gap: 1rem;
       .icon-container {
         width: 70px;
         height: 100px;
-        padding: 14px;
+        padding: 12px;
         p {
-          font-size: 0.8rem;
-          padding-top: 5px;
+          font-size: 0.75rem;
+          padding-top: 4px;
         }
       }
 
