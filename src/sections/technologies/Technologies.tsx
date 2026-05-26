@@ -1,4 +1,3 @@
-import "./technologies.scss";
 import {
   SiTypescript,
   SiReact,
@@ -18,12 +17,15 @@ import { motion } from "framer-motion";
 export default function Technologies() {
   return (
     <>
-      <section className="technologies-container">
-        <h1>Tecnologias</h1>
+      <section
+        id="tecnologies"
+        className="bg-dark-purple-700 w-screen py-20 px-4 flex flex-col items-center"
+      >
+        <h1 className="text-4xl md:text-5xl font-bold mb-16">Tecnologias</h1>
 
-        <div className="technologies-icons">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-10 max-w-7xl">
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -33,11 +35,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiReact color="#61dbfb" size={90} className="responsive-icon" />
-            <p>Reactjs</p>
+            <SiReact color="#61dbfb" size={80} className="responsive-icon" />
+            <p className="text-center text-sm">Reactjs</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -49,13 +51,13 @@ export default function Technologies() {
           >
             <SiTypescript
               color="#007acc"
-              size={90}
+              size={80}
               className="responsive-icon"
             />
-            <p>Typescript</p>
+            <p className="text-center text-sm">Typescript</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -67,13 +69,13 @@ export default function Technologies() {
           >
             <SiTailwindcss
               color="#38BDF8"
-              size={90}
+              size={80}
               className="responsive-icon"
             />
-            <p>Tailwindcss</p>
+            <p className="text-center text-sm">Tailwindcss</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -83,11 +85,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiSass color="#c69" size={90} className="responsive-icon" />
-            <p>Sass</p>
+            <SiSass color="#c69" size={80} className="responsive-icon" />
+            <p className="text-center text-sm">Sass</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -99,13 +101,13 @@ export default function Technologies() {
           >
             <SiNodedotjs
               color="#3C873A"
-              size={90}
+              size={80}
               className="responsive-icon"
             />
-            <p>Nodejs</p>
+            <p className="text-center text-sm">Nodejs</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -115,11 +117,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiExpress color="#3C873A" size={90} className="responsive-icon" />
-            <p>Express</p>
+            <SiExpress color="#3C873A" size={80} className="responsive-icon" />
+            <p className="text-center text-sm">Express</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -131,13 +133,13 @@ export default function Technologies() {
           >
             <SiPostgresql
               color="#008bb9"
-              size={90}
+              size={80}
               className="responsive-icon"
             />
-            <p>Postgresql</p>
+            <p className="text-center text-sm">Postgresql</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -147,11 +149,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiDocker color="#1D63ED" size={90} className="responsive-icon" />
-            <p>Docker</p>
+            <SiDocker color="#1D63ED" size={80} className="responsive-icon" />
+            <p className="text-center text-sm">Docker</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -161,11 +163,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiGit color="#F1502F" size={90} className="responsive-icon" />
-            <p>Git</p>
+            <SiGit color="#F1502F" size={80} className="responsive-icon" />
+            <p className="text-center text-sm">Git</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -175,11 +177,11 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiJest color="#C63D14" size={90} className="responsive-icon" />
-            <p>Jest</p>
+            <SiJest color="#C63D14" size={80} className="responsive-icon" />
+            <p className="text-center text-sm">Jest</p>
           </motion.div>
           <motion.div
-            className="icon-container"
+            className="w-24 md:w-32 flex flex-col items-center justify-center gap-4 p-6 border-2 border-transparent rounded-lg hover:border-cyan-accent transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             animate={{ y: [10, -10] }}
             initial={{ y: -10 }}
             transition={{
@@ -189,8 +191,8 @@ export default function Technologies() {
               repeatType: "reverse",
             }}
           >
-            <SiFigma color="#ffffff" size={90} className="responsive-icon" />
-            <p>Figma</p>
+            <SiFigma color="#ffffff" size={80} className="responsive-icon" />
+            <p className="text-center text-sm">Figma</p>
           </motion.div>
         </div>
       </section>

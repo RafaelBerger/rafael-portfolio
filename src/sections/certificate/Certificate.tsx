@@ -1,4 +1,3 @@
-import "./certificate.scss";
 import RocketseatNode from "../../assets/rockeatseat-node.png";
 import RocketseatReact from "../../assets/rocketseat-react.png";
 import AluraReact from "../../assets/react-alura.png";
@@ -57,22 +56,27 @@ export default function Certificate() {
 
   return (
     <>
-      <section className="certificate-container">
-        <h1>Certificados</h1>
+      <section
+        id="certificate"
+        className="bg-dark-purple-700 w-screen py-20 px-4"
+      >
+        <div className="flex flex-col items-center max-w-6xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-16">Certificados</h1>
 
-        <main>
-          {certificateData.map((data) => {
-            return (
-              <CertificateContent
-                key={data.id}
-                image={data.image}
-                certificateTitle={data.title}
-                certificateDescription={data.description}
-                certificateLink={data.link}
-              />
-            );
-          })}
-        </main>
+          <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 w-full">
+            {certificateData.map((data) => {
+              return (
+                <CertificateContent
+                  key={data.id}
+                  image={data.image}
+                  certificateTitle={data.title}
+                  certificateDescription={data.description}
+                  certificateLink={data.link}
+                />
+              );
+            })}
+          </main>
+        </div>
       </section>
     </>
   );
