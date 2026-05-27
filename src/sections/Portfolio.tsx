@@ -1,10 +1,11 @@
-import financialManagement from "../assets/financialmanagement.png";
-import otimalogImage from "../assets/imagemotimalog.png";
-import amaclassicosImage from "../assets/imagemamaclassicos.png";
 import PortfolioContent from "../components/portfolio-content/PortfolioContent";
-import epifaniasImage from "../assets/bandaepifanias.png";
+import type { Project } from "../types/cms";
 
-export default function Portfolio() {
+interface PortfolioProps {
+  projects: Project[];
+}
+
+export default function Portfolio({ projects }: PortfolioProps) {
   return (
     <>
       <section
@@ -15,42 +16,20 @@ export default function Portfolio() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h1>
 
           <p className="text-lg md:text-xl text-gray-300 mb-16">
-            Útimos projetos concluídos
+            Ultimos projetos concluidos
           </p>
 
           <div className="flex flex-col gap-20 w-full">
-            <PortfolioContent
-              image={epifaniasImage}
-              projectName="Banda Epifanias"
-              projectDescription="Projeto de site estilo Linktree para a banda Epifanias, com links para redes sociais. Tecnologias: React, TypeScript, CSS"
-              projectLink="https://epifanias.vercel.app/"
-              projectGithubLink="https://github.com/RafaelBerger/epifanias"
-            />
-            <PortfolioContent
-              image={amaclassicosImage}
-              projectName="AmaClassicos"
-              projectDescription="Desenvolvi um site de catálogo de carros clássicos para o cliente, com informações e imagens dos veículos consumidos por API pelo CMS Hygraph.
-            Tecnologias: React (com ReactRouter), TypeScript, Hygraph (CMS), GraphQL"
-              projectLink="https://amaclassicos.vercel.app"
-              projectGithubLink="https://github.com/RafaelBerger/amaclassicos"
-            />
-            <PortfolioContent
-              image={otimalogImage}
-              projectName="OtimaLog"
-              projectDescription="Projeto de site estilo landing page para uma empresa de operador logistico de redespacho, informando história, serviços e contato. Tecnologias: React, TypeScript, CSS"
-              projectLink="https://otimalog.com.br"
-              projectGithubLink="https://github.com/RafaelBerger/otimalog"
-            />
-            <PortfolioContent
-              image={financialManagement}
-              projectName="Financial Management"
-              projectDescription="Aplicativo Fullstack para controle de gastos pessoais, com cadastro e listagem de ganhos e gastos, integração via API REST.
-            Tecnologias: React, TailwindCSS, Node.js, Express, PostgreSQL
-            Deploy: Vercel (frontend) e Render (backend)
-            Aviso: O backend pode demorar um pouco para iniciar, pois está hospedado em um serviço gratuito que coloca o servidor em modo de hibernação quando não está em uso."
-              projectLink="https://moneycontroler.vercel.app/"
-              projectGithubLink="https://github.com/RafaelBerger/financial-management-frontend"
-            />
+            {projects.map((project) => (
+              <PortfolioContent
+                key={project.id}
+                image={project.image}
+                projectName={project.title}
+                projectDescription={project.description}
+                projectLink={project.projectUrl}
+                projectGithubLink={project.githubUrl}
+              />
+            ))}
           </div>
         </div>
       </section>
