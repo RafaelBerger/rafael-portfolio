@@ -1,8 +1,12 @@
 import { FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import RafaelFotoDiferente from "../../assets/foto-rafael-diferente.png";
+import type { SiteProfile } from "../types/cms";
 
-export default function About() {
+interface AboutProps {
+  profile: SiteProfile;
+}
+
+export default function About({ profile }: AboutProps) {
   return (
     <>
       <section
@@ -28,42 +32,42 @@ export default function About() {
             <br />
             <p className="flex items-center gap-3 mb-3">
               <a
-                href="https://wa.me/5511999361076"
+                href={profile.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white no-underline hover:text-cyan-accent transition-colors duration-300"
               >
                 <FaWhatsappSquare size={28} color="#4ac4c4" />
-                <span>(11)99936-1076</span>
+                <span>{profile.phoneLabel}</span>
               </a>
             </p>
             <p className="flex items-center gap-3 mb-3">
               <a
-                href="https://linkedin.com/in/rafaelberger"
+                href={profile.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white no-underline hover:text-cyan-accent transition-colors duration-300"
               >
                 <FaLinkedin size={28} color="#4ac4c4" />
-                <span>linkedin.com/in/rafaelberger</span>
+                <span>{profile.linkedinUrl.replace("https://", "")}</span>
               </a>
             </p>
             <p className="flex items-center gap-3">
               <a
-                href="mailto:rafaelberger.dev@gmail.com"
+                href={`mailto:${profile.email}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white no-underline hover:text-cyan-accent transition-colors duration-300"
               >
                 <MdEmail size={28} color="#4ac4c4" />
-                <span>rafaelberger.dev@gmail.com</span>
+                <span>{profile.email}</span>
               </a>
             </p>
           </div>
           <div className="img-container w-full lg:w-1/2 flex justify-center">
             <img
-              src={RafaelFotoDiferente}
-              alt="Foto do rafael"
+              src={profile.aboutImage}
+              alt={`Foto de ${profile.name}`}
               className="w-80 h-80 md:w-96 md:h-96 lg:w-md lg:h-112 rounded-lg object-cover"
             />
           </div>

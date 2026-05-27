@@ -1,7 +1,11 @@
-import Button from "../../components/button/Button";
-import Cv from "../../assets/rafaelberger-cv.pdf";
+import Button from "../components/button/Button";
+import type { SiteProfile } from "../types/cms";
 
-export default function Home() {
+interface HomeProps {
+  profile: SiteProfile;
+}
+
+export default function Home({ profile }: HomeProps) {
   return (
     <>
       <section
@@ -15,27 +19,27 @@ export default function Home() {
                 Olá, meu nome é
               </p>
               <p className="nome text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
-                Rafael Berger
+                {profile.name}
               </p>
               <p className="text-lg md:text-xl lg:text-2xl font-light">
-                Sou Desenvolvedor FullStack
+                Sou {profile.role}
               </p>
             </div>
             <div className="buttons flex justify-start gap-10 flex-wrap w-full">
               <div className="scale-105 md:scale-110 origin-left">
-                <Button href={Cv} isDownload={true}>
+                <Button href={profile.resumePdf} isDownload={true}>
                   Baixar CV
                 </Button>
               </div>
               <div className="scale-105 md:scale-110 origin-left">
-                <Button href="https://wa.me/5511999361076">Fale Comigo</Button>
+                <Button href={profile.whatsappUrl}>Fale Comigo</Button>
               </div>
             </div>
           </div>
           <div className="w-full lg:w-1/2 flex justify-center items-center lg:justify-end">
             <img
-              src="https://github.com/rafaelberger.png"
-              alt="Foto do rafael"
+              src={profile.heroImage}
+              alt={`Foto de ${profile.name}`}
               className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover shadow-lg hover:scale-105 transition-transform duration-300"
               style={{ boxShadow: "0 8px 24px rgba(74, 196, 196, 0.15)" }}
             />
