@@ -1,6 +1,6 @@
 import { FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import RafaelFotoDiferente from "../../assets/foto-rafael-diferente.png";
+import RafaelFotoDiferente from "../assets/foto-rafael-diferente.png";
 
 export default function About() {
   return (

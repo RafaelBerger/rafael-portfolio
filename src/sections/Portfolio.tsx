@@ -1,8 +1,8 @@
-import financialManagement from "../../assets/financialmanagement.png";
-import otimalogImage from "../../assets/imagemotimalog.png";
-import amaclassicosImage from "../../assets/imagemamaclassicos.png";
-import PortfolioContent from "../../components/portfolio-content/PortfolioContent";
-import epifaniasImage from "../../assets/bandaepifanias.png";
+import financialManagement from "../assets/financialmanagement.png";
+import otimalogImage from "../assets/imagemotimalog.png";
+import amaclassicosImage from "../assets/imagemamaclassicos.png";
+import PortfolioContent from "../components/portfolio-content/PortfolioContent";
+import epifaniasImage from "../assets/bandaepifanias.png";
 
 export default function Portfolio() {
   return (

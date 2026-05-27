@@ -1,5 +1,5 @@
-import Button from "../../components/button/Button";
-import Cv from "../../assets/rafaelberger-cv.pdf";
+import Button from "../components/button/Button";
+import Cv from "../assets/rafaelberger-cv.pdf";
 
 export default function Home() {
   return (

@@ -1,9 +1,9 @@
-import RocketseatNode from "../../assets/rockeatseat-node.png";
-import RocketseatReact from "../../assets/rocketseat-react.png";
-import AluraReact from "../../assets/react-alura.png";
-import Scrum from "../../assets/scrum.png";
-import EnglishCertificate from "../../assets/ingles.png";
-import CertificateContent from "../../components/certificate-content/CertificateContent";
+import RocketseatNode from "../assets/rockeatseat-node.png";
+import RocketseatReact from "../assets/rocketseat-react.png";
+import AluraReact from "../assets/react-alura.png";
+import Scrum from "../assets/scrum.png";
+import EnglishCertificate from "../assets/ingles.png";
+import CertificateContent from "../components/certificate-content/CertificateContent";
 
 export default function Certificate() {
   interface certificateDataType {
