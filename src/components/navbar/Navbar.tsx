@@ -14,7 +14,13 @@ export default function Navbar() {
   return (
     <header className="w-full bg-dark-purple-900 fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-white font-bold">R.</div>
+        <a
+          href="#home"
+          className="text-white font-bold no-underline"
+          onClick={() => setOpen(false)}
+        >
+          Rafael
+        </a>
 
         <nav>
           <ul className="hidden md:flex gap-10 lg:gap-12 list-none m-0 p-0">
@@ -32,10 +38,21 @@ export default function Navbar() {
 
           <button
             aria-label="Abrir menu"
-            className="md:hidden text-white text-2xl"
+            aria-expanded={open}
+            className="md:hidden p-2 bg-transparent border-0 focus:outline-none focus:ring-0 active:outline-none overflow-visible"
             onClick={() => setOpen((s) => !s)}
           >
-            {open ? "✕" : "☰"}
+            <span className="relative block w-9 h-9 overflow-visible">
+              <span
+                className={`block absolute left-1/2 top-1/2 w-9 h-0.5 bg-white transform -translate-x-1/2 transition duration-300 ease-in-out origin-center ${open ? "rotate-45" : "-translate-y-3"}`}
+              />
+              <span
+                className={`block absolute left-1/2 top-1/2 w-9 h-0.5 bg-white transform -translate-x-1/2 transition duration-300 ease-in-out origin-center ${open ? "opacity-0" : "translate-y-0"}`}
+              />
+              <span
+                className={`block absolute left-1/2 top-1/2 w-9 h-0.5 bg-white transform -translate-x-1/2 transition duration-300 ease-in-out origin-center ${open ? "-rotate-45" : "translate-y-3"}`}
+              />
+            </span>
           </button>
         </nav>
       </div>
