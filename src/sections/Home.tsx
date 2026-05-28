@@ -13,7 +13,7 @@ export default function Home({ profile }: HomeProps) {
         className="w-screen h-screen bg-dark-purple-900 flex justify-center items-center pt-20 sm:pt-16 md:pt-0 px-4"
       >
         <main className="w-11/12 md:w-4/5 lg:w-3/4 max-w-7xl min-h-[70vh] flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-12">
-          <div className="w-full lg:w-1/2 flex flex-col items-start justify-center gap-16 lg:gap-20">
+          <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center gap-16 lg:gap-20 text-center lg:text-left">
             <div className="introduction flex flex-col gap-4">
               <p className="text-lg md:text-xl lg:text-2xl font-light">
                 Olá, meu nome é
@@ -25,13 +25,13 @@ export default function Home({ profile }: HomeProps) {
                 Sou {profile.role}
               </p>
             </div>
-            <div className="buttons flex justify-start gap-10 flex-wrap w-full">
-              <div className="scale-105 md:scale-110 origin-left">
+            <div className="buttons flex justify-center lg:justify-start gap-6 md:gap-10 flex-wrap w-full">
+              <div>
                 <Button href={profile.resumePdf} isDownload={true}>
                   Baixar CV
                 </Button>
               </div>
-              <div className="scale-105 md:scale-110 origin-left">
+              <div>
                 <Button href={profile.whatsappUrl}>Fale Comigo</Button>
               </div>
             </div>

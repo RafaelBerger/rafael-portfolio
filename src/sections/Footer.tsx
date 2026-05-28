@@ -3,6 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-dark-purple-800 w-screen py-12 px-4 text-center">
       <a
@@ -80,7 +82,10 @@ const Footer = () => {
       </div>
 
       <div className="text-gray-400 text-sm">
-        <p>&copy; Rafael de Andrade Berger. Todos os direitos resevados</p>
+        <p>
+          {currentYear} &copy; Rafael de Andrade Berger. Todos os direitos
+          resevados{" "}
+        </p>
       </div>
     </footer>
   );

@@ -13,9 +13,11 @@ export default function Portfolio({ projects }: PortfolioProps) {
         className="bg-dark-purple-800 w-screen py-20 px-4 md:px-6 lg:px-8"
       >
         <div className="flex flex-col items-center w-full max-w-300 mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Portfolio</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+            Portfolio
+          </h1>
 
-          <p className="text-lg md:text-xl text-gray-300 mb-16">
+          <p className="text-lg md:text-xl text-gray-300 mb-16 text-center">
             Ultimos projetos concluidos
           </p>
 

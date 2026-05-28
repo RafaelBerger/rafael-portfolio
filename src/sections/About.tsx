@@ -13,10 +13,12 @@ export default function About({ profile }: AboutProps) {
         id="about"
         className="bg-dark-purple-800 w-screen min-h-screen py-20 px-4 flex items-center"
       >
-        <div className="flex flex-col lg:flex-row-reverse gap-10 lg:gap-16 items-center max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row-reverse gap-10 lg:gap-16 items-center max-w-6xl mx-auto text-center lg:text-left">
           <div className="about-information w-full lg:w-1/2">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8">Sobre mim</h1>
-            <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center lg:text-left">
+              Sobre mim
+            </h1>
+            <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed text-justify mx-auto lg:mx-0">
               Sou Desenvolvedor Fullstack formado em análise e desenvolvimento
               de sistemas, e com habilidades que abrangem todo o ciclo de
               desenvolvimento de software, desde a concepção até a entrega. Meu
