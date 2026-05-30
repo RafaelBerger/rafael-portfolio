@@ -33,3 +33,36 @@
     @apply translate-y-0;
   }
 }
+
+/* Custom Scrollbar Styles */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(74, 196, 196, 0.6) #1a1838;
+}
+
+/* Webkit Browsers (Chrome, Safari, Edge) */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1a1838;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(74, 196, 196, 0.6);
+  border-radius: 8px;
+  border: 2px solid #1a1838;
+  transition: all 250ms ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(74, 196, 196, 0.9);
+  box-shadow: 0 0 8px rgba(74, 196, 196, 0.4);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background: #4ac4c4;
+}
