@@ -17,7 +17,7 @@ export default function PortfolioContent({
 }: PortfolioContentProps) {
   return (
     <>
-      <main className="flex w-4/5 md:w-full mx-auto flex-col md:flex-row gap-6 md:gap-10 lg:gap-12 items-center md:items-start text-center md:text-left">
+      <main className="flex w-[90%] md:w-full mx-auto flex-col md:flex-row gap-6 md:gap-10 lg:gap-12 items-center md:items-start text-center md:text-left">
         <h2
           id="project-name-mobile"
           className="md:hidden text-2xl font-bold mb-4 text-center"

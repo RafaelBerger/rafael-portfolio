@@ -15,7 +15,7 @@ export default function Certificate({ certificates }: CertificateProps) {
         <div className="flex flex-col items-center max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-16">Certificados</h1>
 
-          <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 w-4/5 md:w-full">
+          <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 w-[90%] md:w-full">
             {certificates.map((data) => {
               return (
                 <CertificateContent
