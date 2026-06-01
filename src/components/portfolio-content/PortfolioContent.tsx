@@ -17,7 +17,7 @@ export default function PortfolioContent({
 }: PortfolioContentProps) {
   return (
     <>
-      <main className="flex w-full flex-col md:flex-row gap-6 md:gap-10 lg:gap-12 items-center md:items-start text-center md:text-left">
+      <main className="flex w-4/5 md:w-full mx-auto flex-col md:flex-row gap-6 md:gap-10 lg:gap-12 items-center md:items-start text-center md:text-left">
         <h2
           id="project-name-mobile"
           className="md:hidden text-2xl font-bold mb-4 text-center"
@@ -28,7 +28,7 @@ export default function PortfolioContent({
           <img
             src={image}
             alt="Imagem de projeto"
-            className="w-full max-w-70 md:max-w-none h-auto md:h-full rounded-lg object-cover mx-auto md:mx-0"
+            className="w-full max-w-[250px] md:max-w-none h-auto md:h-full rounded-lg object-cover mx-auto md:mx-0"
           />
         </div>
         <div className="information-container flex flex-col gap-8 lg:gap-10 md:flex-1 pt-0.5 items-center md:items-start">

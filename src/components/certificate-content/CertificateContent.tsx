@@ -21,7 +21,7 @@ export default function CertificateContent({
             <img
               src={image}
               alt="Imagem de projeto"
-              className="w-full h-44 md:h-52 lg:h-56 rounded-lg object-cover"
+              className="w-full max-w-[250px] md:max-w-none mx-auto h-44 md:h-52 lg:h-56 rounded-lg object-cover"
             />
           </div>
           <h3 className="text-xl font-bold mb-2">{certificateTitle}</h3>

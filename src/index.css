@@ -16,6 +16,7 @@
 
   p {
     @apply m-0 p-0;
+    font-size: 12px;
   }
 }
 
@@ -361,5 +362,36 @@
   section#home .introduction > .nome {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 12px !important;
+  }
+
+  section#home .introduction p {
+    font-size: 1.125rem !important;
+  }
+
+  section#home .introduction > .nome {
+    font-size: 3.5rem !important;
+    line-height: 1;
+  }
+
+  section#home img[alt*="Foto de"] {
+    width: 18rem !important;
+    height: 18rem !important;
+  }
+
+  section#about .img-container img {
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 250px;
+    object-fit: cover;
+  }
+
+  section#portfolio .image-container {
+    max-width: 250px !important;
   }
 }

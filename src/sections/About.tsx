@@ -13,7 +13,7 @@ export default function About({ profile }: AboutProps) {
         id="about"
         className="bg-dark-purple-800 w-screen min-h-screen py-20 px-4 flex items-center"
       >
-        <div className="flex flex-col lg:flex-row-reverse gap-10 lg:gap-16 items-center max-w-6xl mx-auto text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row-reverse gap-10 lg:gap-16 items-center w-4/5 lg:w-full max-w-6xl mx-auto text-center lg:text-left">
           <div className="about-information w-full lg:w-1/2">
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center lg:text-left">
               Sobre mim
@@ -70,7 +70,7 @@ export default function About({ profile }: AboutProps) {
             <img
               src={profile.aboutImage}
               alt={`Foto de ${profile.name}`}
-              className="w-80 h-80 md:w-96 md:h-96 lg:w-md lg:h-112 rounded-lg object-cover"
+              className="w-80 min-w-[250px] h-96 md:w-96 md:h-96 lg:w-md lg:h-112 rounded-lg object-contain md:object-cover"
             />
           </div>
         </div>
