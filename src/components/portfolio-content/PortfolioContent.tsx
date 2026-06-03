@@ -28,7 +28,7 @@ export default function PortfolioContent({
           <img
             src={image}
             alt="Imagem de projeto"
-            className="w-full max-w-[250px] md:max-w-none h-auto md:h-full rounded-lg object-cover mx-auto md:mx-0"
+            className="w-full max-w-62.5 md:max-w-none h-auto md:h-full rounded-lg object-cover mx-auto md:mx-0"
           />
         </div>
         <div className="information-container flex flex-col gap-8 lg:gap-10 md:flex-1 pt-0.5 items-center md:items-start">
